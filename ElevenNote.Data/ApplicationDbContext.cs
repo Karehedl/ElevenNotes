@@ -1,5 +1,6 @@
 using ElevenNote.Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using ElevenNote.Data;
 
     public class ApplicationDbContext : DbContext
     {
@@ -7,6 +8,5 @@ using Microsoft.EntityFrameworkCore;
         : base(options)
     {
     }
-
     public DbSet<UserEntity> Users { get; set; }  
     }
